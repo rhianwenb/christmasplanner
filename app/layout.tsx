@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Lora } from "next/font/google";
+import Nav from "./components/Nav";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -29,6 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lora.className}  bg-stone-100 justify-center`} >
+
+        <Nav/>
+        
         {children}
 
         <div className="p-2 fixed bottom-0"> Code by Rhianwen </div>
