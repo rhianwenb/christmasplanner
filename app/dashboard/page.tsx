@@ -22,7 +22,7 @@ export default function Dashboard() {
           
             <p className="p-4">Simple to do list to make sure nothing gets forgotten.</p>
             <Image
-              className="dark:invert pt-8 items-end"
+              className="dark:invert pt-8 self-end"
               src="/santa.svg"
               alt="santa"
               width={150}

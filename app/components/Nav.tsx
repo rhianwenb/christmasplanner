@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import '../globals.css'
 
 
@@ -31,9 +32,21 @@ export default function Nav() {
   return (
     <div id="nav">
         <div className="flex justify-between p-3">
-            <h1 className="font-extrabold text-emerald-800 text-4xl">Christmas Planner</h1>
+            
+          <div className="text-xl hover:underline font-semibold">
+            <SignedOut>
+              <SignInButton> 
+                <button className="hover:underline hover:text-emerald-800"> Sign In </button>
+              </SignInButton>
+            </SignedOut>
+
+            <SignedIn> 
+              <UserButton/>
+            </SignedIn>
+        </div>
         
         <div>
+          
           <ul className="flex items-center text-xl">
           {menuItems.map((item, index) => { 
             const isActive = item.link === path;

@@ -7,7 +7,6 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    
     extend: {
         backgroundImage: {
           "baubles": "url('/baubleBackground.jpg')",
