@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from 'react';
 import '../globals.css';
-// import Countdown from '../Countdown';
+import Countdown from "../components/Countdown";
 // import Notes from '../notes/page';
 
 
@@ -34,7 +34,7 @@ export default function Dashboard() {
             <h3 className="text-2xl font-bold mb-2"> Countdown ... <em>tick tock!</em></h3>
             <p className="p-4"> There's still time. There is still time.</p>
             {/* {days.toString()} : {hours} : {minutes} : {seconds} */}
-            {/* < Countdown /> */}
+            < Countdown />
             <div className=""> 
             <Image
               className="dark:invert pt-8 items-end"
